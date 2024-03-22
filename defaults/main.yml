@@ -1,0 +1,15 @@
+satellite_fqdn: "test.example.com
+satellite_org: "example"
+capsule_ak: "example-ak"
+capsule_data_disk: /dev/nvme1n1
+capsule_vg_name: cap_vg01
+capsule_vip: "capsule.example.com"
+
+##LVM Configuration
+capsule_req_dirs:
+  - mount_point: /var/lib/pulp
+    lv_name: pulp
+    lv_size: 320g
+  - mount_point: /var/lib/pgsql
+    lv_name: pgsql
+    lv_size: 20g
